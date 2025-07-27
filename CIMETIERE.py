@@ -11,8 +11,4 @@ with st.sidebar:
     
     st.warning("NB:Seul les gestionnaires du cimetiere ont le droit de supprimer ou d'ajouter un défunt.")
 
-st.page_link(
-    'https://umap.openstreetmap.fr/fr/map/cimetiere-de-pikine_1226453?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&editMode=disabled&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=databrowser&captionBar=false&captionMenus=true',
-    label="Cliquez ici pour aller vers la carte du Cimetière de Pikine",  # <--- Ajoutez un label ici
-    icon="🗺️" # Optionnel : vous pouvez ajouter une icône si vous le souhaitez
-)
+st.page_link("https://umap.openstreetmap.fr/fr/map/cimetiere-de-piking_1226453?scaleControl=false&miniMap=fa", label="Cliquer ici pour aller vers la carte du Cimetière de Piking")
