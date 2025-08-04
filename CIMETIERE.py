@@ -1,6 +1,4 @@
-# Importation des bibliothèques nécessaires
 import streamlit as st
-from PIL import Image
 
 # Titre centré de la page
 st.markdown(
@@ -8,16 +6,19 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-# Utilisation de Pillow pour ouvrir l'image de manière fiable
-try:
-    # Changement du nom de fichier ici pour utiliser le .tif principal
-    image_path = "cimetiere.tif.ovr"
-    image = Image.open(image_path)
-    st.image(image)
-except FileNotFoundError:
-    st.error("Le fichier images/cimetiere.tif n'a pas été trouvé.")
-except Image.UnidentifiedImageError:
-    st.error("Le fichier images/cimetiere.tif n'a pas pu être identifié comme une image.")
+# Remplacement de l'image par le texte descriptif
+st.markdown(
+    """
+    Créé en 1952, le cimetière municipal de la ville de
+    Pikine s'étend sur une superficie de 40 733 mètres carrés. Il est situé dans le
+    département de Pikine, plus précisément dans la commune de Pikine Ouest. Ses
+    coordonnées géographiques sont comprises entre 14°45'25" de latitude Nord
+    et 17°24'0" de longitude Ouest. Cette commune est délimitée au nord par
+    les communes de Pikine Nord et Pikine Sud, à l'est par la commune de Pikine
+    Est, au sud-est par la commune de Guinaw Rail Sud, au sud-ouest par la commune
+    de Dalifort, et à l'ouest par la commune de Golf Sud.
+    """
+)
 
 # Création de la barre latérale
 with st.sidebar:
