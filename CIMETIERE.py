@@ -5,7 +5,7 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-st.image("C:\\Users\\dell\\Desktop\\plateforme\\images\\cimetiere.tif")
+st.image("images/cimetiere.tif")
 with st.sidebar:
     st.info("Sur cette plateforme;vous pouvez rechercher,ajouter ou supprimer un défunt ")
     
