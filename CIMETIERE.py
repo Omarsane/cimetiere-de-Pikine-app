@@ -10,11 +10,12 @@ st.markdown(
 
 # Utilisation de Pillow pour ouvrir l'image de manière fiable
 try:
-    image_path = "images/cimetiere.tif"
+    # Changement du nom de fichier ici pour utiliser le .ovr
+    image_path = "images/cimetiere.tif.ovr"
     image = Image.open(image_path)
     st.image(image)
 except FileNotFoundError:
-    st.error("Le fichier images/cimetiere.tif n'a pas été trouvé.")
+    st.error("Le fichier images/cimetiere.tif.ovr n'a pas été trouvé.")
 
 # Création de la barre latérale
 with st.sidebar:
