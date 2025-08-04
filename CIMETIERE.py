@@ -25,9 +25,8 @@ with st.sidebar:
     st.info("Sur cette plateforme, vous pouvez rechercher, ajouter ou supprimer un défunt.")
     st.warning("NB: Seuls les gestionnaires du cimetière ont le droit de supprimer ou d'ajouter un défunt.")
 
-# Lien vers la carte du cimetière avec du style HTML pour la couleur rouge
-st.page_link(
-    "https://umap.openstreetmap.fr/fr/map/cimetiere-de-piking_1226453?scaleControl=false&miniMap=fa", 
-    label="<span style='color:red'>Cliquer ici pour aller vers la carte du Cimetière de Piking</span>",
+# Utilisation de st.markdown pour un lien HTML avec une couleur rouge
+st.markdown(
+    "<a href='https://umap.openstreetmap.fr/fr/map/cimetiere-de-piking_1226453?scaleControl=false&miniMap=fa' style='color:red; text-decoration:none;'>Cliquer ici pour aller vers la carte du Cimetière de Piking</a>",
     unsafe_allow_html=True
 )
