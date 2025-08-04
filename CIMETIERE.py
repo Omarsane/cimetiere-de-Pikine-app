@@ -11,7 +11,7 @@ st.markdown(
 # Utilisation de Pillow pour ouvrir l'image de manière fiable
 try:
     # Changement du nom de fichier ici pour utiliser le .tif principal
-    image_path = "images/cimetiere.tif"
+    image_path = "cimetiere.tif"
     image = Image.open(image_path)
     st.image(image)
 except FileNotFoundError:
